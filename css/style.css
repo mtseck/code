@@ -1,0 +1,176 @@
+:root {
+    --dark: #424242;
+    --mint-green: rgb(0, 255, 174);
+    --mint-green-hover: rgb(3, 200, 137);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: var(--dark);
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#home {
+    width: 80%;
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--mint-green);
+    padding-bottom: 40px;
+}
+
+#home h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#home form {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+#home select,
+#home input {
+    height: 60px;
+    background: #000;
+    outline: none;
+    border: 3px solid var(--dark);
+    color: var(--mint-green);
+    font-size: 16px;
+    padding: 15px 25px;
+}
+
+#home select {
+    flex-basis: 100%;
+    margin: 0 10px;
+}
+
+#home input {
+    flex-basis: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#home input:hover {
+    background: #343434;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+#app .left {
+    height: 100%;
+}
+
+#app .left img {
+    height: 99%;
+}
+
+#app .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#app .right .choices {
+    margin: 20px 0;
+}
+
+#app .right .choices>div {
+    margin: 10px 0;
+}
+
+#app .right .choices label {
+    font-size: 22px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#app .right .choices input {
+    content: '';
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+#app .right button {
+    background: #000;
+    color: var(--mint-green);
+    border: 3px solid var(--dark);
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#app .right button:hover {
+    background: #343434;
+}
+
+#app #start {
+    border: 3px solid var(--dark);
+    padding: 25px;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+#app .results h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000;
+    color: silver;
+}
+
+#app .results table tr td {
+    padding: 40px 50px;
+    cursor: pointer;
+    background: #000;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--mint-green);
+}
+
+#app .results table tr td:hover {
+    background: rgb(24, 24, 24);
+}
+
+#app .results table tr td.error {
+    background: rgb(0, 0, 0);
+    color: crimson;
+}
+#app .results table tr td.error:hover{
+    background: rgb(24, 24, 24);
+}
+
+#timer {
+    background: #000;
+    color: var(--mint-green);
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 3px solid var(--dark);
+}
+
+#timer:hover{
+    background: #343434;
+}
